@@ -1,6 +1,7 @@
 export const apidata = {
     //api: 'http://192.168.10.89:3034/'
-    api: 'http://127.0.0.1:3000/'
+    //api: 'http://127.0.0.1:3000/'
+    api:'https://pinkbugback1.onrender.com'
 }
 
 export const report_type_data = [
