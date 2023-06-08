@@ -1,0 +1,34 @@
+<h5>
+    <center>Local Bodies Election 2023</center>
+</h5>
+<h5>
+    <center>Daily Election Related Complain Summery Report of Sri Lanka</center>
+</h5>
+<p>
+    <center>Election Commission of Sri Lanka</center>
+</p>
+<p>
+    <center>Duration: 2022/11/19 16:00:00 To 2022/11/20 15:59:59</center>
+</p>
+<table border={1} cellspacing="0" padding='3'>
+    <thead>
+        <tr>
+            <th>EDR Center</th>
+            <th>Complain Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        {
+        result && result.items.map(x => {
+        return <tr>
+            <td>{x.name_en}</td>
+            <td align='right'>{x.items}</td>
+        </tr>
+        })
+        }
+        <tr>
+            <td>Total Complains</td>
+            <td align='right'>{result ? result.itemcount : ''}</td>
+        </tr>
+    </tbody>
+</table>
